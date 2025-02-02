@@ -17,7 +17,25 @@ export default function AboutUs() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="bg-slate-800 rounded-lg aspect-square" />
+          {/* Square Box with Centered SVG */}
+          <div className="bg-slate-800 rounded-lg aspect-square flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-2/3 md:w-1/2 lg:w-1/3 text-green-400"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 2v2m6.364 3.636l1.414-1.414M20 12h2M17.364 18.364l1.414 1.414M12 20v2M6.636 17.364l-1.414 1.414M4 12H2m3.636-6.364L4.222 4.222M16 12a4 4 0 11-8 0 4 4 0 018 0zm-5 6h2a2 2 0 012 2H9a2 2 0 012-2zm-7 3h14"
+              />
+            </svg>
+          </div>
+
+          {/* About Us Content */}
           <div>
             <span className="text-blue-400 text-sm font-semibold">ABOUT US</span>
             <h2 className="text-4xl font-bold mt-2 mb-6">

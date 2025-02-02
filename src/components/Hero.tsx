@@ -2,16 +2,18 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-slate-800 text-white pt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+    <section className="relative min-h-screen bg-slate-800 bg-cover bg-center text-white pt-20"
+      style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80')" }}
+    >
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* Content Section */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ 
-            duration: 1,
-            ease: 'easeOut',
-            staggerChildren: 0.2 
-          }}
+          transition={{ duration: 1, ease: 'easeOut', staggerChildren: 0.2 }}
           className="max-w-3xl"
         >
           <motion.div 
